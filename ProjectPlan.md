@@ -103,7 +103,7 @@ Use: Provides contextual weather features corresponding to air quality dates and
 ## Timeline
 | **Phase**                        | **Task**                                                    | **Lead** | **Start Date** | **Due Date** | **Status**  |
 | -------------------------------- | ----------------------------------------------------------- | -------- | -------------- | ------------ | ----------- |
-| **1. Project Setup**             | Form team, create GitHub repo, setup environment            | Both     | Sept 26        | Oct 1        | ✅           |
+| **1. Project Setup**             | Form team, create GitHub repo, setup environment            | Both     | Sept 26        | Oct 1        | Done          |
 | **2. Planning**                  | Define research questions, identify datasets, design schema | Both     | Oct 1          | Oct 14       | In progress |
 | **3. Data Acquisition**          | Write Python scripts to download and store both datasets    | Chien    | Oct 14         | Oct 25       | Pending     |
 | **4. Data Storage/Organization** | Create SQL schema (DuckDB or SQLite)                        | Yicheng  | Oct 25         | Nov 1        | Pending     |
@@ -135,4 +135,5 @@ We will initially rely on Matplotlib and Seaborn but may explore additional tool
 
 Reproducibility Environment:
 A Dockerfile or requirements.txt file will be created closer to completion once dependencies are finalized.
+
 ---
