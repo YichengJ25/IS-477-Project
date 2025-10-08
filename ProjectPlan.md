@@ -1,34 +1,117 @@
 # Project Plan
 
 ## Overview
-The goal of our project is to design and implement an end-to-end data lifecycle workflow. We will acquire, integrate, and analyze two different datasets in order to answer meaningful research questions, while ensuring ethical data handling, reproducibility, and transparency. The final deliverable will include data collection, storage, integration, cleaning, quality assessment, and analysis supported by code, documentation, and metadata.
+Our project aims to explore the relationship between weather conditions and air quality levels in major U.S. cities. By combining datasets from two distinct sources—EPA Air Quality System (AQS) and NOAA’s Open-Meteo Weather API—we will examine how variables such as temperature, humidity, and wind speed influence concentrations of key pollutants like PM2.5 and ozone.
+
+This project aligns with the data lifecycle framework discussed in class:
+
+Collection — acquiring air quality and weather data from reliable APIs;
+
+Storage and Organization — loading and storing the data in a relational database for structured access;
+
+Integration and Cleaning — joining datasets on common attributes (city, date) using SQL and Pandas;
+
+Analysis and Visualization — performing exploratory analysis in Python and visualizing temporal and spatial trends;
+
+Reproducibility — creating an automated, end-to-end workflow that can be re-run using documented scripts and metadata.
+
+Ultimately, the project seeks to demonstrate the value of integrated environmental datasets for understanding local pollution dynamics and supporting informed public decision-making.
 
 ## Research Question(s)
-- Question 1: [Insert your first research question here]  
-- Question 2: [Insert your second research question here, if applicable]  
+- Question 1: Are PM2.5 levels higher during days with low wind speed or temperature inversions? 
+- Question 2: Can simple statistical models predict short-term air quality based on recent weather trends?
+- Question 3: Does humidity influence PM2.5 differently in the Midwest versus the West Coast?
 
 ## Team
-- **Member A (Name)**: Responsible for dataset collection, data cleaning, and documentation.  
-- **Member B (Name)**: Responsible for analysis, workflow automation, and report writing.  
+- **Member A (Name)**: Chien Y – Lead Developer (Python)
 
-Both members will collaborate on integration, quality assessment, and final presentation.
+Responsible for writing Python scripts for data collection, cleaning, and integration.
+
+Will develop automated workflows and ensure reproducibility through notebooks and scripts.
+
+Will also manage final documentation and GitHub organization.
+- **Member B (Name)**: Yicheng J – Data Engineer (SQL)
+
+Responsible for designing and managing the database schema for storing the integrated datasets.
+
+Will write SQL queries for data profiling, aggregation, and analysis.
+
+Will assist in creating data quality reports and handling metadata documentation.
+
+Both members will collaborate on analysis design, visualization, and report writing.
 
 ## Datasets
-- **Dataset 1**: Describe the dataset (source, type, size, variables, and why it is relevant).  
-- **Dataset 2**: Describe the dataset (source, type, size, variables, and why it is relevant).  
+- **Dataset 1**: EPA Air Quality System (AQS) Data
 
-These datasets will be chosen from distinct sources and schemas to satisfy the project requirement for integration.
+Source: U.S. Environmental Protection Agency (https://aqs.epa.gov/aqsweb/airdata/download_files.html
+)
+
+Description: Provides daily air quality measurements, including PM2.5, O₃, NO₂, and SO₂, from monitoring stations across the U.S.
+
+Format: CSV files downloadable by year and pollutant type.
+
+Access Method: Direct file download (HTTP).
+
+Schema (simplified):
+
+Date_Local (date)
+
+City_Name (text)
+
+State_Name (text)
+
+Parameter_Name (text)
+
+Arithmetic_Mean (float)
+
+Units_of_Measure (text)
+
+License: Public domain (U.S. federal data, no restrictions).
+
+Use: Serves as the main dataset for pollutant concentrations. 
+
+- **Dataset 2**: NOAA Open-Meteo Historical Weather API
+
+Source: https://open-meteo.com/
+
+Description: Provides daily weather variables (temperature, humidity, precipitation, wind speed, etc.) by latitude and longitude.
+
+Format: JSON via REST API.
+
+Access Method: API request using Python’s requests module.
+
+Schema (simplified):
+
+date
+
+temperature_2m_max
+
+temperature_2m_min
+
+precipitation_sum
+
+windspeed_10m
+
+relativehumidity_2m
+
+License: Open data under CC-BY 4.0.
+
+Use: Provides contextual weather features corresponding to air quality dates and locations.
+
+
 
 ## Timeline
-| Week | Task | Responsible Member |
-|------|------|---------------------|
-| Week 1 | Collect datasets, document metadata | Member A |
-| Week 2 | Data cleaning and storage strategy | Member A |
-| Week 3 | Integration of datasets (Python/Pandas or SQL) | Both |
-| Week 4 | Exploratory data analysis and quality assessment | Member B |
-| Week 5 | Modeling, workflow automation | Member B |
-| Week 6 | Draft report (Project README.md) | Both |
-| Week 7 | Final project release (code, data, documentation) | Both |
+| **Phase**                        | **Task**                                                    | **Lead** | **Start Date** | **Due Date** | **Status**  |
+| -------------------------------- | ----------------------------------------------------------- | -------- | -------------- | ------------ | ----------- |
+| **1. Project Setup**             | Form team, create GitHub repo, setup environment            | Both     | Sept 26        | Oct 1        | ✅           |
+| **2. Planning**                  | Define research questions, identify datasets, design schema | Both     | Oct 1          | Oct 14       | In progress |
+| **3. Data Acquisition**          | Write Python scripts to download and store both datasets    | Chien    | Oct 14         | Oct 25       | Pending     |
+| **4. Data Storage/Organization** | Create SQL schema (DuckDB or SQLite)                        | Yicheng  | Oct 25         | Nov 1        | Pending     |
+| **5. Integration & Cleaning**    | Merge datasets, handle missing data                         | Both     | Nov 1          | Nov 10       | Pending     |
+| **6. Analysis & Visualization**  | Explore correlations and build regression model             | Both     | Nov 11         | Nov 25       | Pending     |
+| **7. Workflow Automation**       | Build “Run All” script and document workflow                | Chien    | Nov 25         | Dec 5        | Pending     |
+| **8. Final Report & Submission** | Write final README.md and upload to GitHub                  | Both     | Dec 5          | Dec 10       | Pending     |
+
 
 ## Constraints
 - Limited time during the semester to complete all phases of the data lifecycle.  
