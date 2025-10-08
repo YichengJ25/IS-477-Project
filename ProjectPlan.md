@@ -114,15 +114,25 @@ Use: Provides contextual weather features corresponding to air quality dates and
 
 
 ## Constraints
-- Limited time during the semester to complete all phases of the data lifecycle.  
-- Potential challenges in accessing or cleaning datasets.  
-- GitHub repository size limits for storing large datasets (mitigated by storing raw data externally if necessary).  
+Data Availability:
+Some air quality monitors have missing or inconsistent records. We will handle this by filtering for stations with sufficient data coverage and documenting imputation or exclusion steps.
+
+API Rate Limits:
+The Open-Meteo API limits request frequency; we will include delays or use batch requests to comply.
+
+Integration Complexity:
+Matching EPA monitoring station data with city-level weather data may require coordinate-based joins or fuzzy matching.
+
+Ethical and Legal Compliance:
+Both datasets are open and public. Nevertheless, we will include license attributions and clarify that the data are used for academic research only.
 
 ## Gaps
-- Final selection of datasets is pending.  
-- Need to decide on the specific integration approach (Pandas merge, SQL join, or both).  
-- May require additional guidance on ethical/legal constraints such as licensing and data usage terms.  
+Predictive Modeling:
+While correlation and regression analysis are planned, a predictive model (e.g., linear regression) may be added later if time permits.
 
+Visualization Tools:
+We will initially rely on Matplotlib and Seaborn but may explore additional tools such as Plotly if time allows.
+
+Reproducibility Environment:
+A Dockerfile or requirements.txt file will be created closer to completion once dependencies are finalized.
 ---
-
-*Note: This plan anticipates later course topics (workflow automation, reproducibility, metadata) and will evolve as the project progresses.*
