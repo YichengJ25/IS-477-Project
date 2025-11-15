@@ -1,7 +1,7 @@
 # Project Plan
 
 ## Overview
-Our project aims to explore the relationship between weather conditions and air quality levels in major U.S. cities. By combining datasets from two distinct sources—EPA Air Quality System (AQS) and NOAA’s Open-Meteo Weather API—we will examine how variables such as temperature, humidity, and wind speed influence concentrations of key pollutants like PM2.5 and ozone.
+Our project aims to explore the relationship between weather conditions and air quality levels in major U.S. cities. By combining datasets from two distinct sources—EPA Air Quality System (AQS) and NOAA’s Open-Meteo Weather API—we will examine how variables such as temperature, humidity, and wind speed influence concentrations of key pollutants like PM2.5.
 
 This project aligns with the data lifecycle framework discussed in class:
 
