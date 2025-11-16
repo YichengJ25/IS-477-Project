@@ -13,12 +13,7 @@ Before running any acquisition, extraction, or integration scripts, **please unz
 
 data/raw/epa/daily_88101_2023.zip
 
-This will restore the original folder structure:
-
-data/raw/epa/daily_88101_2023/
-└── daily_88101_2023.csv
-
-All Jupyter notebooks and Python scripts have been written to automatically read the **CSV**, not the ZIP.  
+This will restore the original folder structure. All Jupyter notebooks and Python scripts have been written to automatically read the **CSV**, not the ZIP.  
 Once the file is unzipped, the entire project works end-to-end without any modification.
 
-If you have questions or need clarification, please feel free to contact me. Thank you!
+If you have questions or need clarification, please contact me. 
