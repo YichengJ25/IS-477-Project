@@ -10,7 +10,7 @@ The work completed so far represents the full data engineering foundation of the
 
 ## 2. Progress by Task
 
-### **Task 1 — Project Setup (Completed)**
+### **Task 1 — Project Setup (Completed - both)**
 We completed the initial repository structure on GitHub using a clear and reproducible folder hierarchy:
 
 ```
@@ -30,7 +30,7 @@ This setup ensured a systematic environment for the ETL process.
 
 ---
 
-### **Task 2 — Planning (Completed)**
+### **Task 2 — Planning (Completed - both)**
 We refined our scope to focus on **Chicago**, as well as limiting the pollutant of interest to **PM2.5**. This allowed for a cleaner and more feasible analysis within project constraints. The research questions were narrowed accordingly.
 
 A fully updated plan appears in:  
@@ -38,7 +38,7 @@ A fully updated plan appears in:
 
 ---
 
-### **Task 3 — Data Acquisition (Completed)**
+### **Task 3 — Data Acquisition (Completed - Yicheng)**
 
 #### **EPA PM2.5 Data**
 Steps performed:
@@ -59,7 +59,7 @@ All acquisition work is documented in:
 
 ---
 
-### **Task 4 — Storage & Organization (Completed)**
+### **Task 4 — Storage & Organization (Completed -Yicheng)**
 We selected **DuckDB** as our relational storage engine due to its:
 - Single-file simplicity  
 - High-speed analytics  
@@ -76,7 +76,7 @@ Artifacts appear in:
 
 ---
 
-### **Task 5 — Extraction & Cleaning (Completed)**
+### **Task 5 — Extraction & Cleaning (Completed - Yicheng)**
 
 #### **EPA PM2.5 Cleaning**
 Performed steps:
@@ -108,7 +108,7 @@ All work handled in:
 
 ---
 
-### **Task 6 — Data Integration (Completed)**
+### **Task 6 — Data Integration (Completed - Yicheng)**
 We merged both cleaned datasets into a single analytical table.
 
 Steps:
@@ -125,7 +125,7 @@ This dataset will be used for all downstream analysis.
 
 ---
 
-### **Task 7 — Data Quality & Cleaning (Upcoming — Assigned to Chien)**
+### **Task 7 — Data Quality & Cleaning (Upcoming - Chien)**
 Chien will perform:
 - Outlier detection for PM2.5 spikes  
 - Identification of extreme weather patterns  
@@ -136,7 +136,7 @@ These steps ensure high data reliability.
 
 ---
 
-### **Task 8 — Analysis & Visualization (Upcoming)**
+### **Task 8 — Analysis & Visualization (Upcoming - Chien)**
 Planned tasks:
 - Exploratory analysis  
 - Summary statistics  
@@ -150,7 +150,7 @@ Artifacts will include:
 
 ---
 
-### **Task 9 — Workflow Automation (Upcoming)**
+### **Task 9 — Workflow Automation (Upcoming - Chien)**
 We will implement:
 - Snakemake pipeline **or**
 - A consolidated Python "Run All" script
@@ -160,7 +160,7 @@ This will automate:
 
 ---
 
-### **Task 10 — Reproducibility Package (Upcoming)**
+### **Task 10 — Reproducibility Package (Upcoming - both)**
 Includes:
 - `requirements.txt`
 - `pip freeze`
@@ -169,7 +169,7 @@ Includes:
 
 ---
 
-### **Task 11 — Metadata & Documentation (Upcoming)**
+### **Task 11 — Metadata & Documentation (Upcoming - both)**
 
 We will produce:
 - Complete data dictionary  
@@ -178,7 +178,7 @@ We will produce:
 
 ---
 
-### **Task 12 — Final Report & Submission (Upcoming)**
+### **Task 12 — Final Report & Submission (Upcoming - both)**
 Final deliverables include:
 - Final `README.md`
 - Workflow diagram
@@ -234,10 +234,10 @@ New filenames added throughout pipeline:
 
 ---
 
-## 5. Team Member Contributions
+## 5. Summary For Team Member Contributions
 
-### **Yicheng — Lead for Milestone 3 (Majority of Completed Work)**  
-I completed all steps from **data acquisition through data integration**, including:
+### **Yicheng — Lead for Data Acquisition to Data Integration**  
+Yicheng completed all steps from **data acquisition through data integration**, including:
 - Downloading EPA & NOAA data  
 - Building API requests  
 - Generating all checksums  
@@ -253,8 +253,6 @@ I completed all steps from **data acquisition through data integration**, includ
 - Writing the integration script:
   - `03_data_integration.py`
 
-This represents the core backbone of the project’s data pipeline.
-
 ---
 
 ### **Chien — Upcoming Work Lead (Data Quality + Analysis)**
@@ -267,10 +265,6 @@ Chien will now take over the post-integration stages, including:
 - Workflow automation  
 - Reproducibility documentation  
 
-These steps will build directly on the integrated dataset I prepared.
+These steps will build directly on the integrated dataset Yicheng prepared.
 
 ---
-
-## 6. Total Word Count
-(Approximately 1500 words)
-
