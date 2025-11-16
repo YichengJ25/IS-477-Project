@@ -44,8 +44,6 @@ Will lead the data integration phase by joining EPA and NOAA datasets using SQL/
 Will lead metadata documentation, including the data dictionary, descriptive metadata, and license documentation.  
 Will help prepare the reproducibility package and Box data folder structure.
 
----
-
 Both members will collaborate on the final analysis design, interpretation of results, report writing, and final GitHub release.
 
 ## Datasets
