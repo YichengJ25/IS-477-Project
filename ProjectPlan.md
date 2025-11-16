@@ -1,7 +1,7 @@
 # Project Plan
 
 ## Overview
-Our project aims to explore the relationship between weather conditions and air quality levels in major U.S. cities — Chicago. By combining datasets from two distinct sources—EPA Air Quality System (AQS) and NOAA’s Open-Meteo Weather API—we examine how variables such as temperature, humidity, and wind speed influence concentrations of key pollutants like PM2.5.
+Our project aims to explore the relationship between weather conditions and air quality levels in major U.S. cities — Chicago. By combining datasets from two distinct sources—EPA Air Quality System (AQS) and NOAA’s Open-Meteo Weather API—we examine how variables such as temperature, humidity, and wind speed influence concentrations of key pollutants like PM2.5 in year 2023.
 
 This project aligns with the data lifecycle framework discussed in class:
 
@@ -23,13 +23,11 @@ We also address ethical and legal constraints by complying with all open data li
 
 Ultimately, the project seeks to demonstrate the value of integrated environmental datasets for understanding local pollution dynamics and supporting informed public decision-making.
 
-
 ## Research Question(s)
 1. How do weather patterns (temperature, humidity, wind, precipitation) relate to daily PM2.5 levels in Chicago?  
 2. Can weather variables help explain unusually high or low PM2.5 days?
 
 ## Team
-
 - **Member A: Chien Y
 Will research on the dataset and isuuse we want to explore on this project 
 Will lead the development of data cleaning scripts, including outlier detection and OpenRefine recipe export.  
@@ -52,12 +50,10 @@ Will help prepare the reproducibility package and Box data folder structure.
 
 Both members will collaborate on the final analysis design, interpretation of results, report writing, and final GitHub release.
 
-
 ## Datasets
 - **Dataset 1**: EPA Air Quality System (AQS) Data
 
-Source: U.S. Environmental Protection Agency (https://aqs.epa.gov/aqsweb/airdata/download_files.html
-)
+Source: U.S. Environmental Protection Agency (https://aqs.epa.gov/aqsweb/airdata/download_files.html)
 
 Description: Provides daily air quality measurements, including PM2.5, O₃, NO₂, and SO₂, from monitoring stations across the U.S.
 
