@@ -152,6 +152,4 @@ We will initially rely on Matplotlib and Seaborn but may explore additional tool
 
 Reproducibility Environment:
 A Dockerfile or requirements.txt file will be created closer to completion once dependencies are finalized.
-
--
 ---
