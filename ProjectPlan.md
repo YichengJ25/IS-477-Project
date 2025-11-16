@@ -120,7 +120,7 @@ Use: Provides contextual weather features corresponding to air quality dates and
 | **3. Data Acquisition**          | Write Python scripts to download EPA CSV + NOAA API JSON data; generate SHA-256 checksums  | Yicheng   | Oct 14         | Oct 25       | Done        |
 | **3b. Acquisition Documentation**| Document acquisition steps, API parameters, file checksums                                 | Yichneg   | Oct 20         | Oct 25       | Pending     |
 | **4. Storage & Organization**    | Write python to load data into a relational database with consitent  structure & naming    | Yicheng   | Oct 25         | Nov 1        | Pending     |
-| **5. Extraction & Enrichment**   | Extract key variables, normalize formats, enrich records with geolocation/date alignment   | Yichneg   | Nov 1          | Nov 5        | Pending     |
+| **5. Extraction & Cleaning**     | Extract key variables, normalize formats preparing for integration                         | Yichneg   | Nov 1          | Nov 5        | Pending     |
 | **6. Data Integration**          | Join weather + EPA data via SQL/Pandas; build conceptual integration model                 | Yichneg   | Nov 5          | Nov 10       | Pending     |
 | **7. Data Quality & Cleaning**   | Detect missing/outliers; apply cleaning scripts; export OpenRefine recipe                  | Chien     | Nov 10         | Nov 15       | Pending     |
 | **8. Analysis & Visualization**  | Run statistical analysis; create visualizations; document analysis steps                   | Chien     | Nov 11         | Nov 25       | Pending     |
