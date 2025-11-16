@@ -125,8 +125,9 @@ This dataset will be used for all downstream analysis.
 
 ---
 
-### **Task 7 — Data Quality & Cleaning (Upcoming - Chien)**
-Chien will perform:
+### **Task 7 — Data Quality & Cleaning (Completed - Chien)**
+
+steps:
 - Outlier detection for PM2.5 spikes  
 - Identification of extreme weather patterns  
 - Missing value treatment  
@@ -134,6 +135,11 @@ Chien will perform:
 
 These steps ensure high data reliability.
 
+Output saved as:  
+✔ `data/clean/chicago_pm25_weather_daily_clean.csv`
+
+All work handled in:  
+✔ `code/04_data_quality_and_clean.ipynb`
 ---
 
 ### **Task 8 — Analysis & Visualization (Upcoming - Chien)**
