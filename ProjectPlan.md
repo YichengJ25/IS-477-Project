@@ -36,8 +36,6 @@ Will also build workflow automation using Snakemake or a “Run All” script an
 Will assist with the reproducibility package, including requirements.txt and pip freeze.
 Will lead analysis notebooks, models, visualizations, and workflow automation.
 
----
-
 - **Member B: Yicheng J
 Will write programmatic acquisition scripts for EPA and NOAA data, including generating SHA-256 checksums and documenting all acquisition steps.  
 Will build extraction and enrichment scripts in Python (e.g., variable extraction, format normalization). 
