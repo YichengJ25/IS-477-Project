@@ -26,7 +26,6 @@ IS-477-Project/
 ```
 
 This setup ensured a systematic environment for the ETL process.  
-**Artifacts:** Initial `README.md`, base directory structure.
 
 ---
 
@@ -140,6 +139,7 @@ Output saved as:
 
 All work handled in:  
 ✔ `code/04_data_quality_and_clean.ipynb`
+
 ---
 
 ### **Task 8 — Analysis & Visualization (Upcoming - Chien)**
@@ -204,7 +204,7 @@ Final deliverables include:
 | Storage | DuckDB schema | **Yicheng** | Done | — |
 | Extraction & Cleaning | EPA + NOAA | **Yicheng** | Done | — |
 | Integration | Weather + PM2.5 | **Yicheng** | Done | — |
-| Data Quality | Outliers, OpenRefine | **Chien** | Pending | Nov 20 |
+| Data Quality | Outliers, OpenRefine | **Chien** | Done | Nov 20 |
 | Analysis | EDA + visuals | **Chien** | Pending | Nov 25 |
 | Automation | Pipeline build | Chien | Pending | Dec 5 |
 | Reproducibility | reqs + Box | Both | Pending | Dec 7 |
@@ -269,7 +269,9 @@ Chien will now take over the post-integration stages, including:
 - Exploratory analysis  
 - Visualization  
 - Workflow automation  
-- Reproducibility documentation  
+- Reproducibility documentation
+- Writing Data Clean notebooks
+   - `04_data_quality_and_clean.ipynb`  
 
 These steps will build directly on the integrated dataset Yicheng prepared.
 
