@@ -26,7 +26,6 @@ IS-477-Project/
 ```
 
 This setup ensured a systematic environment for the ETL process.  
-**Artifacts:** Initial `README.md`, base directory structure.
 
 ---
 
@@ -140,6 +139,7 @@ Output saved as:
 
 All work handled in:  
 ✔ `code/04_data_quality_and_clean.ipynb`
+
 ---
 
 ### **Task 8 — Analysis & Visualization (Upcoming - Chien)**
@@ -239,7 +239,7 @@ Final deliverables include:
 | Storage | DuckDB schema | **Yicheng** | Done | — |
 | Extraction & Cleaning | EPA + NOAA | **Yicheng** | Done | — |
 | Integration | Weather + PM2.5 | **Yicheng** | Done | — |
-| Data Quality | Outliers, OpenRefine | **Chien** | Pending | Nov 20 |
+| Data Quality | Outliers, OpenRefine | **Chien** | Done | Nov 20 |
 | Analysis | EDA + visuals | **Chien** | Pending | Nov 25 |
 | Automation | Pipeline build | Chien | Pending | Dec 5 |
 | Reproducibility | reqs + Box | Both | Pending | Dec 7 |
@@ -304,11 +304,14 @@ Chien will now take over the post-integration stages, including:
 - Exploratory analysis  
 - Visualization  
 - Workflow automation  
-- Reproducibility documentation  
+- Reproducibility documentation
+- Writing Data Clean notebooks
+   - `04_data_quality_and_clean.ipynb`  
 
 These steps will build directly on the integrated dataset Yicheng prepared.
 
 ---
+<<<<<<< HEAD
 ## References
 
 **EPA Air Quality Data (PM2.5)**
@@ -328,3 +331,8 @@ Waskom, M. et al. (2020). Seaborn: Statistical data visualization. https://seabo
 
 **Statsmodels Library**
 Seabold, S. & Perktold, J. (2010). Statsmodels: Econometric and statistical modeling with Python. https://www.statsmodels.org/
+=======
+
+## 6. Summary For The Project Progress And Limit
+Overall, our project is progressing smoothly and remains fully on schedule. During this milestone, we successfully completed all tasks from data acquisition through data integration, establishing the entire foundational pipeline needed for downstream analysis. Because we intentionally scoped the project to focus on one city (Chicago) and one year (2023), the final dataset is naturally limited in size. The EPA PM2.5 monitoring stations in Chicago did not report measurements on all 365 days of the year, resulting in only 128 valid EPA daily entries, while the NOAA dataset contains a complete 365-day weather record. After performing an inner join on the date field, our integrated dataset contains only the dates where both weather and PM2.5 data were reported. This explains why the final analytic dataset includes approximately 128 rows—a realistic outcome that reflects normal gaps and inconsistencies in real-world environmental monitoring. Despite the smaller size, the dataset is sufficient for meaningful exploratory analysis, correlation studies, and weather-pollution relationship evaluation. Our next steps will focus on data quality assessment, outlier handling, exploratory analysis, and visualization, ensuring that the integrated dataset yields valid insights for our research questions.
+>>>>>>> 677ffb05407bd7366e664a80ca94fbbc4e2551c5
