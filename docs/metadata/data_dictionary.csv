@@ -1,0 +1,14 @@
+| Column Name           | Description                                                  | Data Type           | Units / Notes                        |
+| --------------------- | ------------------------------------------------------------ | ------------------- | ------------------------------------ |
+| **date**              | The calendar date of the observation.                        | string (YYYY-MM-DD) | —                                    |
+| **pm25_mean**         | Daily average PM2.5 concentration (fine particulate matter). | float               | µg/m³                                |
+| **pm25_min**          | Minimum recorded PM2.5 level for the day.                    | float               | µg/m³                                |
+| **pm25_max**          | Maximum recorded PM2.5 level for the day.                    | float               | µg/m³                                |
+| **n_measurements**    | Number of PM2.5 measurements taken on that date.             | integer             | count                                |
+| **temp_max**          | Maximum daily temperature.                                   | float               | °C                                   |
+| **temp_min**          | Minimum daily temperature.                                   | float               | °C                                   |
+| **precip_sum**        | Total daily precipitation.                                   | float               | mm                                   |
+| **shortwave_rad_sum** | Total daily shortwave solar radiation.                       | float               | J/m² or W/m²·s (depending on source) |
+| **humidity_mean**     | Average daily relative humidity.                             | float               | %                                    |
+| **wind_speed_max**    | Maximum wind speed recorded on that day.                     | float               | m/s                                  |
+| **wind_dir_dominant** | Dominant wind direction for the day.                         | string / float      | degrees (0–360)                      |
