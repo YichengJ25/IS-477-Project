@@ -167,6 +167,31 @@ This will automate:
 ---
 
 ### **Task 10 — Reproducibility Package (Upcoming - both)**
+| Column Name           | Description                                                  | Data Type           | Units / Notes                        |
+| --------------------- | ------------------------------------------------------------ | ------------------- | ------------------------------------ |
+| **date**              | The calendar date of the observation.                        | string (YYYY-MM-DD) | —                                    |
+| **pm25_mean**         | Daily average PM2.5 concentration (fine particulate matter). | float               | µg/m³                                |
+| **pm25_min**          | Minimum recorded PM2.5 level for the day.                    | float               | µg/m³                                |
+| **pm25_max**          | Maximum recorded PM2.5 level for the day.                    | float               | µg/m³                                |
+| **n_measurements**    | Number of PM2.5 measurements taken on that date.             | integer             | count                                |
+| **temp_max**          | Maximum daily temperature.                                   | float               | °C                                   |
+| **temp_min**          | Minimum daily temperature.                                   | float               | °C                                   |
+| **precip_sum**        | Total daily precipitation.                                   | float               | mm                                   |
+| **shortwave_rad_sum** | Total daily shortwave solar radiation.                       | float               | J/m² or W/m²·s (depending on source) |
+| **humidity_mean**     | Average daily relative humidity.                             | float               | %                                    |
+| **wind_speed_max**    | Maximum wind speed recorded on that day.                     | float               | m/s                                  |
+| **wind_dir_dominant** | Dominant wind direction for the day.                         | string / float      | degrees (0–360)                      |
+
+
+## Reproducing This Project
+
+Follow the steps below to fully reproduce all data cleaning and analysis results for this project.
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/YichengJ25/IS-477-Project.git
+cd IS-477-Project
+
 Includes:
 - `requirements.txt`
 - `pip freeze`
@@ -176,6 +201,16 @@ Includes:
 ---
 
 ### **Task 11 — Metadata & Documentation (Upcoming - both)**
+
+## Data Access
+
+Because parts of the dataset cannot be redistributed directly through GitHub, all input and output data files are stored in a shared Box folder:
+
+**[INSERT BOX LINK HERE]**
+
+After downloading the files from Box, place them into the following folders inside the project directory:
+
+
 
 We will produce:
 - Complete data dictionary  
@@ -274,3 +309,22 @@ Chien will now take over the post-integration stages, including:
 These steps will build directly on the integrated dataset Yicheng prepared.
 
 ---
+## References
+
+**EPA Air Quality Data (PM2.5)**
+U.S. Environmental Protection Agency. (2025). Air Quality System (AQS) Data Mart. Retrieved from https://www.epa.gov/aqs
+
+**Open-Meteo Weather API**
+Open-Meteo. (2025). Historical Weather API. Retrieved from https://open-meteo.com/
+
+**Pandas Library**
+The Pandas Development Team. (2024). pandas-dev/pandas: Powerful Python data analysis toolkit. https://pandas.pydata.org/
+
+**Matplotlib Library**
+Hunter, J. D. (2007). Matplotlib: A 2D graphics environment. Computing in Science & Engineering, 9(3), 90–95.
+
+**Seaborn Library**
+Waskom, M. et al. (2020). Seaborn: Statistical data visualization. https://seaborn.pydata.org/
+
+**Statsmodels Library**
+Seabold, S. & Perktold, J. (2010). Statsmodels: Econometric and statistical modeling with Python. https://www.statsmodels.org/
