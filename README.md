@@ -433,7 +433,7 @@ We also include a Snakemake workflow to demonstrate workflow automation. However
 
 Finally, the project includes a complete metadata package containing the data dictionary, descriptive metadata following DataCite guidelines, and checksum files for integrity verification. With the repository structure, Box-hosted data, notebooks, scripts, and automation components in place, the project provides a fully traceable and reproducible workflow that reflects best practices in data curation and analysis. 
 
-Box Link 
+### Box Link 
 
 All input and output data required to reproduce this project are hosted in a shared Box folder, as required by the course policy prohibiting raw or large data files from being committed directly to GitHub. Users must download the complete dataset package from the following link: https://uofi.box.com/s/nx5x1z7f9bagtzc1daf0ibits9sexmey. After downloading, the contents should be extracted and placed into the appropriate directories within the project structure, including data/raw/, data/processed/, and data/clean/. The project’s notebooks and scripts expect this structure, and the pipeline will not execute correctly unless the files are placed in their designated locations. A full description of the required directory layout is provided in the Reproducibility section. This Box folder must remain accessible to graders and anyone attempting to re-run the workflow. 
 
